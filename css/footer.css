@@ -1,0 +1,23 @@
+.footer{
+  padding: 55px 0px 45px;
+  background-color: var(--dark);
+}
+.footer p{
+  font-family: var(--lato);
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  color: var(--gray);
+}
+.footer p span{
+  color: var(--colorful);
+}
+@media (max-width: 767px) {
+  .footer{
+    padding: 20px 0 20px;
+  }
+  .footer p{
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}

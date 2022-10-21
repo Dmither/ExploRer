@@ -1,5 +1,25 @@
 .top{
+  position: relative;
+  z-index: 1;
   padding: 240px 0 100px;
+}
+.top__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background-image: url(../img/jpg/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top__bg::before{
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .top__title{
   position: absolute;
@@ -7,10 +27,14 @@
   overflow: hidden;
 }
 .top__articles{
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   margin: 0 auto;
 }
 .top__more{
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   margin: 0 auto;
   padding: 50px 0 60px;

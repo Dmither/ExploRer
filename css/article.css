@@ -4,7 +4,7 @@
 .article-header{
   position: relative;
   z-index: 2;
-  height: 330px;
+  min-height: 200px;
   padding: 20px ;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,8 @@
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
 }
@@ -31,6 +33,7 @@
   padding: 0px 10px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease 0s;
   font-family: var(--montserrat);
   font-size: 8px;
   line-height: 3;
@@ -38,8 +41,11 @@
   text-transform: uppercase;
   color: var(--contrast);
 }
+.article-tags a:hover, .article-tags a:focus{
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .article-info{
-  padding-left: 40px;
   display: grid;
   grid-template-columns: 40px 1fr;
   column-gap: 14px;
@@ -48,6 +54,17 @@
 .article-photo{
   grid-row: span 2;
   border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.1s ease 0s;
+}
+.article-photo img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.article-photo:hover, .article-photo:focus{
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .article-name{
   font-family: var(--montserrat);
@@ -61,9 +78,11 @@
   line-height: 1.46;
   color: var(--contrast);
 }
+.article-name:hover, .article-name:focus, .article-date:hover, .article-date:focus{
+  outline: none;
+  opacity: 0.5;
+}
 .article-title{
-  padding-left: 40px;
-  padding-bottom: 20px;
   max-width: 500px;
   font-family: var(--montserrat);
   font-size: 28px;
@@ -71,7 +90,11 @@
   color: var(--contrast);
 }
 .article-content{
-  padding: 35px 60px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
 }
 .article-text{
   height: calc(1.39 * 3em);
@@ -83,9 +106,31 @@
 }
 .article-link{
   display: block;
-  padding-top: 5px;
   font-family: var(--lato);
   font-size: 17px;
   line-height: 1.76;
   color: var(--colorful);
+  transition: all 0.2s ease 0s;
+}
+.article-link:hover, .article-link:focus{
+  outline: none;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .article-header{
+    height: 330px;
+  }
+  .article-info{
+    padding-left: 40px;
+  }
+  .article-title{
+    max-width: 500px;
+    font-family: var(--montserrat);
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--contrast);
+  }
+  .article-content{
+    padding: 35px 60px;
+  }
 }

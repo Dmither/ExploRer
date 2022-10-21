@@ -1,7 +1,7 @@
 .top{
   position: relative;
   z-index: 1;
-  padding: 240px 0 100px;
+  padding: 50px 20px 20px;
 }
 .top__bg{
   position: absolute;
@@ -37,14 +37,15 @@
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
-  padding: 50px 0 60px;
+  padding: 20px 0 30px;
   background-color: var(--gray-ultralight);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 .top__more h2{
+  text-align: center;
   font-family: var(--montserrat);
   font-size: 30px;
   line-height: 1.2;
@@ -60,4 +61,20 @@
   line-height: 3;
   text-transform: uppercase;
   color: var(--contrast);
+  transition: all 0.2s ease 0s;
+}
+.top__btn:hover, .top__btn:focus{
+  outline: none;
+  background-color: var(--contrast);
+  box-shadow: 0 0 5px var(--colorful);
+  color: var(--colorful);
+}
+@media (min-width: 768px) {
+  .top{
+    padding: 240px 20px 100px;
+  }
+  .top__more{
+    padding: 50px 0 60px;
+    gap: 30px;
+  }
 }

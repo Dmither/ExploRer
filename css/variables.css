@@ -1,0 +1,11 @@
+:root{
+  --main: #333;
+  --dark: #000;
+  --contrast: #fff;
+  --gray:#8B8B8B;
+  --gray-light: #A9AFB3;
+  --gray-ultralight: #F1F1F1;
+  --colorful: #8D4FDB;
+  --lato: 'Lato', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+}

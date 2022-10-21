@@ -1,0 +1,39 @@
+.top{
+  padding: 240px 0 100px;
+}
+.top__title{
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+.top__articles{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.top__more{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
+  background-color: var(--gray-ultralight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.top__more h2{
+  font-family: var(--montserrat);
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--main);
+}
+.top__btn{
+  display: block;
+  padding: 8px 25px;
+  border-radius: 3px;
+  background-color: var(--colorful);
+  font-family: var(--montserrat);
+  font-size: 10px;
+  line-height: 3;
+  text-transform: uppercase;
+  color: var(--contrast);
+}

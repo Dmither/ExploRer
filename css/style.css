@@ -1,0 +1,10 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(header.css);
+@import url(top.css);
+@import url(article.css);
+
+
+body{
+  background-color: #333;
+}
